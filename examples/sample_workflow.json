@@ -1,1 +1,56 @@
-
+{
+  "version": "1.0.0",
+  "created_at": "2024-01-01T00:00:00",
+  "workflow": {
+    "blocks": [
+      {
+        "id": "block_1",
+        "type": "web_open_browser",
+        "x": 100,
+        "y": 100,
+        "parameters": {
+          "browser": "chrome",
+          "headless": false
+        },
+        "connections": {
+          "browser": ["block_2"]
+        }
+      },
+      {
+        "id": "block_2",
+        "type": "web_navigate",
+        "x": 350,
+        "y": 100,
+        "parameters": {
+          "url": "https://example.com"
+        },
+        "connections": {
+          "browser": ["block_3"]
+        }
+      },
+      {
+        "id": "block_3",
+        "type": "logic_delay",
+        "x": 600,
+        "y": 100,
+        "parameters": {
+          "seconds": 2
+        },
+        "connections": {}
+      },
+      {
+        "id": "block_4",
+        "type": "web_close_browser",
+        "x": 850,
+        "y": 100,
+        "parameters": {},
+        "connections": {}
+      }
+    ],
+    "metadata": {
+      "block_count": 4,
+      "connection_count": 2,
+      "description": "Simple workflow: Open browser, navigate to example.com, wait 2 seconds, close browser"
+    }
+  }
+}

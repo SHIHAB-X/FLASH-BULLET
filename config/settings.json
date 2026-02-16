@@ -1,1 +1,61 @@
-
+{
+  "version": "1.0.0",
+  "application": {
+    "name": "Visual Automation Tool",
+    "theme": "dark",
+    "auto_save": false,
+    "auto_save_interval": 300
+  },
+  "execution": {
+    "default_timeout": 30,
+    "stop_on_error": true,
+    "max_retries": 3,
+    "log_level": "INFO"
+  },
+  "web_automation": {
+    "default_browser": "chrome",
+    "headless": false,
+    "implicit_wait": 10,
+    "page_load_timeout": 30,
+    "user_agents": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    ]
+  },
+  "http_requests": {
+    "default_timeout": 30,
+    "verify_ssl": true,
+    "follow_redirects": true,
+    "max_redirects": 5,
+    "default_headers": {
+      "User-Agent": "Visual-Automation-Tool/1.0",
+      "Accept": "application/json, text/html, */*"
+    }
+  },
+  "canvas": {
+    "grid_size": 30,
+    "snap_to_grid": true,
+    "auto_layout": false,
+    "zoom_step": 0.1,
+    "min_zoom": 0.5,
+    "max_zoom": 2.0
+  },
+  "editor": {
+    "font_family": "Arial",
+    "font_size": 11,
+    "show_tooltips": true,
+    "tooltip_delay": 500
+  },
+  "security": {
+    "allow_external_scripts": false,
+    "sandbox_execution": false,
+    "encrypt_credentials": false
+  },
+  "advanced": {
+    "enable_debug_mode": false,
+    "show_execution_time": true,
+    "max_log_size_mb": 10,
+    "cleanup_on_exit": true
+  }
+}

@@ -1,0 +1,31 @@
+# GUI Framework
+customtkinter==5.2.1
+pillow==10.1.0
+
+# Web Automation
+selenium==4.15.2
+playwright==1.40.0
+webdriver-manager==4.0.1
+
+# HTTP Requests
+requests==2.31.0
+urllib3==2.1.0
+
+# Data Processing
+pandas==2.1.4
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# JSON/XML Processing
+jsonschema==4.20.0
+
+# Utilities
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# Logging
+colorlog==6.8.0
+
+# Optional: Advanced features
+# schedule==1.2.0  # For scheduled automation
+# cryptography==41.0.7  # For credential encryption
